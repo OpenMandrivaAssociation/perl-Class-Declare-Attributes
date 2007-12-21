@@ -14,6 +14,7 @@ BuildRequires:  perl-Test-Exception
 Buildrequires: perl-devel
 %endif
 BuildArch:	noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Class::Declare::Attributes extends Class::Declare by adding support for
