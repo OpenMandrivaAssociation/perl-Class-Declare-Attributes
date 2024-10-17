@@ -8,7 +8,7 @@ Release:	5
 Summary:	Class-Declare-Attributes module for perl 
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://search.cpan.org/CPAN/authors/id/I/IB/IBB/%{upstream_name}-%{upstream_version}.tar.bz2
 
 BuildRequires:	perl(Class::Declare)
