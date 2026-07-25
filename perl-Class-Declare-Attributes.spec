@@ -1,15 +1,15 @@
 %define upstream_name    Class-Declare-Attributes
-%define upstream_version 0.08
+%define upstream_version 0.12
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	5
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Class-Declare-Attributes module for perl 
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://search.cpan.org/CPAN/authors/id/I/IB/IBB/%{upstream_name}-%{upstream_version}.tar.bz2
+Url:		https://github.com/denormal/perl-Class-Declare-Attributes
+Source0:	https://cpan.metacpan.org/authors/id/I/IB/IBB/Class-Declare-Attributes-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl(Class::Declare)
