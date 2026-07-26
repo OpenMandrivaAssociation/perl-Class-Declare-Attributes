@@ -1,15 +1,13 @@
 %define upstream_name    Class-Declare-Attributes
-%define upstream_version 0.12
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	0.12
+Release:	2
 
 Summary:	Class-Declare-Attributes module for perl 
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/denormal/perl-Class-Declare-Attributes
-Source0:	https://cpan.metacpan.org/authors/id/I/IB/IBB/Class-Declare-Attributes-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/I/IB/IBB/Class-Declare-Attributes-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl(Class::Declare)
@@ -24,7 +22,7 @@ inspired by Damian Conway's Attribute::Handlers module, and Tatsuhiko
 Miyagawa's Attribute::Protected module.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -50,9 +48,7 @@ make test
 
 * Sat Aug 01 2009 JÃ©rÃ´me Quelin <jquelin@mandriva.org> 0.70.0-1mdv2010.0
 + Revision: 405827
-- rebuild using %%perl_convert_version
-
-* Fri Jul 18 2008 Guillaume Rousse <guillomovitch@mandriva.org> 0.07-1mdv2009.0
+- rebuild using %0.12 Fri Jul 18 2008 Guillaume Rousse <guillomovitch@mandriva.org> 0.07-1mdv2009.0
 + Revision: 238032
 - update to new version 0.07
 
