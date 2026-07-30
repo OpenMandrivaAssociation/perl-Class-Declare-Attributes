@@ -1,13 +1,14 @@
 %define upstream_name    Class-Declare-Attributes
+%define upstream_version 0.12
 Name:		perl-%{upstream_name}
 Version:	0.12
-Release:	2
+Release:	1
 
 Summary:	Class-Declare-Attributes module for perl 
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/denormal/perl-Class-Declare-Attributes
-Source0:	https://cpan.metacpan.org/authors/id/I/IB/IBB/Class-Declare-Attributes-%{version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/I/IB/IBB/Class-Declare-Attributes-0.12.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl(Class::Declare)
@@ -36,40 +37,4 @@ make test
 %doc Changes README
 %{perl_vendorlib}/Class/Declare/Attributes.pm
 %{_mandir}/*/*
-
-%changelog
-* Sat May 28 2011 Funda Wang <fwang@mandriva.org> 0.80.0-2mdv2011.0
-+ Revision: 680819
-- mass rebuild
-
-* Tue Oct 19 2010 Guillaume Rousse <guillomovitch@mandriva.org> 0.80.0-1mdv2011.0
-+ Revision: 586762
-- update to new version 0.08
-
-* Sat Aug 01 2009 JÃ©rÃ´me Quelin <jquelin@mandriva.org> 0.70.0-1mdv2010.0
-+ Revision: 405827
-- rebuild using %0.12 Fri Jul 18 2008 Guillaume Rousse <guillomovitch@mandriva.org> 0.07-1mdv2009.0
-+ Revision: 238032
-- update to new version 0.07
-
-* Sat Jun 07 2008 Guillaume Rousse <guillomovitch@mandriva.org> 0.06-1mdv2009.0
-+ Revision: 216579
-- update to new version 0.06
-
-  + Olivier Blin <oblin@mandriva.com>
-    - restore BuildRoot
-
-  + Thierry Vignaud <tv@mandriva.org>
-    - kill re-definition of %%buildroot on Pixel's request
-
-* Tue Jul 03 2007 Guillaume Rousse <guillomovitch@mandriva.org> 0.04-1mdv2008.0
-+ Revision: 47627
-- update to new version 0.04
-
-
-* Thu Sep 29 2005 Nicolas Lécureuil <neoclust@mandriva.org> 0.03-2mdk
-- Buildrequires
-
-* Wed Jul 13 2005 Oden Eriksson <oeriksson@mandriva.com> 0.03-1mdk
-- initial Mandriva package
 
