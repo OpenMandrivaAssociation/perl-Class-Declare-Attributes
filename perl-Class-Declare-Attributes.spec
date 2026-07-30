@@ -2,7 +2,7 @@
 %define upstream_version 0.12
 Name:		perl-%{upstream_name}
 Version:	0.12
-Release:	5
+Release:	6
 
 Summary:	Class-Declare-Attributes module for perl 
 License:	GPL+ or Artistic
@@ -27,7 +27,10 @@ Miyagawa's Attribute::Protected module.
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
-%make
+%make_build
+make test || :
+
+%check
 make test || :
 
 %install
