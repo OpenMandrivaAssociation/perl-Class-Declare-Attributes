@@ -2,7 +2,7 @@
 %define upstream_version 0.12
 Name:		perl-%{upstream_name}
 Version:	0.12
-Release:	1
+Release:	2
 
 Summary:	Class-Declare-Attributes module for perl 
 License:	GPL+ or Artistic
@@ -23,7 +23,7 @@ inspired by Damian Conway's Attribute::Handlers module, and Tatsuhiko
 Miyagawa's Attribute::Protected module.
 
 %prep
-%setup -q -n %{upstream_name}-%{version}
+%setup -q -n Class-Declare-Attributes-0.12
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
