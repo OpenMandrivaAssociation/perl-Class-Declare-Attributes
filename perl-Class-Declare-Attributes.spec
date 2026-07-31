@@ -2,7 +2,7 @@
 %define upstream_version 0.12
 Name:		perl-%{upstream_name}
 Version:	0.12
-Release:	15
+Release:	16
 
 Summary:	Class-Declare-Attributes module for perl 
 License:	GPL+ or Artistic
