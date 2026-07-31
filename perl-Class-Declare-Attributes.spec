@@ -2,7 +2,7 @@
 %define upstream_version 0.12
 Name:		perl-%{upstream_name}
 Version:	0.12
-Release:	49
+Release:	1
 
 Summary:	Class-Declare-Attributes module for perl 
 License:	GPL+ or Artistic
@@ -37,7 +37,7 @@ make test || :
 %makeinstall_std
 
 %files
-%doc Changes README
+%doc Changes META.yml README
 %{perl_vendorlib}/Class/Declare/Attributes.pm
 %{_mandir}/*/*
 
